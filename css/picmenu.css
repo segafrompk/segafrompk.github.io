@@ -1,0 +1,100 @@
+.menucontainer {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: auto auto 30px;
+  width: 70%;
+}
+
+.menucontainerpc {
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: auto auto 30px;
+  position: absolute;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 50%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.menucontainerpc > .parallelogram {
+  height: 280px;
+  margin-bottom: -7px;
+}
+
+.parallelogram {
+  display: inline-block;
+  backface-visibility: hidden;
+  overflow: hidden;
+  height: 360px;
+  position: relative;
+  left: -63px;
+  transition-duration: 300ms;
+  transform: skew(-16deg, 0);
+}
+
+#leftpic {
+  width: calc(35% + 42px);
+}
+
+#centerpic {
+  width: calc(30% + 42px);
+}
+
+#rightpic {
+  width: calc(35% + 42px);
+}
+
+.menuleftbg {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  background-image: url("../images/menuleft.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: skew(16deg, 0);
+  filter: grayscale(90%);
+  transition: 500ms;
+}
+
+.menuleftbg:hover {
+  filter: grayscale(0%);
+}
+
+.menucenterbg {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  left: -25px;
+  background-image: url("../images/menucenter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: skew(16deg, 0);
+  filter: grayscale(90%);
+  transition: 500ms;
+}
+
+.menucenterbg:hover {
+  filter: grayscale(0%);
+}
+
+.menurightbg {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  left: -25px;
+  background-image: url("../images/menuright.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: skew(16deg, 0);
+  filter: grayscale(90%);
+  transition: 500ms;
+}
+
+.menurightbg:hover {
+  filter: grayscale(0%);
+}

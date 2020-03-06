@@ -1,0 +1,139 @@
+/* Typewriter efekat CSS pocinje ovde */
+@font-face {
+  font-family: "zektonbold";
+  src: url("../fonts/zekton_rg_bold-webfont.woff2") format("woff2"),
+    url("../fonts/zekton_rg_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.typewritter {
+  flex: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  padding: 0 3rem;
+  z-index: 999;
+}
+
+.typewrittertext {
+  font-weight: 200;
+  -webkit-text-stroke: 1px rgb(48, 52, 74);
+  color: rgb(241, 104, 36);
+  margin: 0.4rem;
+}
+
+.typewrittertext {
+  font-family: "zektonbold" !important;
+  font-size: 3rem;
+  line-height: 4.8;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Cursor for animation start */
+.blinking-cursor {
+  color: rgb(241, 104, 36);
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+  }
+  50% {
+    -webkit-text-stroke: 1px rgb(48, 52, 74);
+    color: rgb(241, 104, 36);
+  }
+}
+
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+  }
+  50% {
+    -webkit-text-stroke: 1px rgb(48, 52, 74);
+    color: rgb(241, 104, 36);
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+  }
+  50% {
+    -webkit-text-stroke: 1px rgb(48, 52, 74);
+    color: rgb(241, 104, 36);
+  }
+}
+
+@-ms-keyframes blink {
+  from,
+  to {
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+  }
+  50% {
+    -webkit-text-stroke: 1px rgb(48, 52, 74);
+    color: rgb(241, 104, 36);
+  }
+}
+
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+    -webkit-text-stroke: 1px transparent;
+  }
+  50% {
+    -webkit-text-stroke: 1px rgb(48, 52, 74);
+    color: rgb(241, 104, 36);
+  }
+}
+
+/* Cursor for animation end */
+
+@media (min-width: 1200px) {
+  .typewrittertext {
+    font-size: 4rem;
+    line-height: 3.4;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .typewrittertext {
+    font-size: 3rem;
+    line-height: 4.8;
+  }
+}
+
+@media (max-width: 500px) {
+  .typewrittertext {
+    font-size: 2.5rem;
+    line-height: 5.8;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Typewriter efekat CSS se zavrsava ovde */

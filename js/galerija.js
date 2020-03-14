@@ -455,8 +455,10 @@ const galerijaPodaci = {
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/4/2/1.jpg"
-        }
-    }
+        },
+        "adresaSlike": "images/galerija/4/1/1.jpg"
+    },
+    "dummy": "dummy"
 };
 
 let trenutni = galerijaPodaci;

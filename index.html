@@ -33,7 +33,7 @@
     <meta name="msapplication-TileImage" content="images/favicon_270.png"/>
     <meta name="msapplication-config" content="none"/>
     <!-- FavIcons end-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css" />
 
@@ -143,65 +143,9 @@
       <section data-index="2" id="portfolio" class="page">
         <div class="container">
           <div class="gallery">
-              <div class="row">
-                 
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/1.jpg">
-                          <img class="element" src="images/galerija/1.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/2.jpg">
-                          <img class="element" src="images/galerija/2.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/3.jpg">
-                          <img class="element" src="images/galerija/3.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/4.jpg">
-                          <img class="element" src="images/galerija/4.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/5.jpg">
-                          <img class="element" src="images/galerija/5.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/6.jpg">
-                          <img class="element" src="images/galerija/6.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/7.jpg">
-                          <img class="element" src="images/galerija/7.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/8.jpg">
-                          <img class="element" src="images/galerija/8.jpg" alt="Bridge">
-                      </a>
-                  </div>
-  
-                  <div class="col-sm-12 col-md-4">
-                      <a class="lightbox" href="images/galerija/9.jpg">
-                          <img class="element" src="images/galerija/9.jpg" alt="Bridge">
-                      </a>
-                  </div>
-                  
-              </div>
+            <svg onclick="idiNazad()" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-circle-left" class="svg-inline--fa fa-arrow-alt-circle-left fa-w-16 dugmeNazad" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z"/></svg>
           </div>
-      </div>
+        </div>
 
       </section>
 
@@ -212,14 +156,15 @@
     
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="js/baguetteBox.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/galerija.js"></script>
     <script>
-      baguetteBox.run('.gallery', {
-          "overlayBackgroundColor": "rgba(0, 0, 0, 0.7)",
-          "noScrollbars": "true",
-          "animation": "slideIn"
-      });
+      // baguetteBox.run('.gallery', {
+      //   "overlayBackgroundColor": "rgba(0, 0, 0, 0.7)",
+      //   "noScrollbars": "false",
+      //   "animation": "slideIn"
+      // });
     </script>
   </body>
 </html>

@@ -33,7 +33,8 @@ const galerijaPodaci = {
             "slika7": {
                 "adresaSlike": "images/galerija/1/1/7.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/1/1/1.jpg",
         },
         "Kanalizacioni i vodomerni šahtovi u okviru kompleksa Novi Niš": {
             "sadrziSlike": true,
@@ -44,11 +45,14 @@ const galerijaPodaci = {
             "slika2": {
                 "adresaSlike": "images/galerija/1/2/2.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/1/2/1.jpg"
         },
         "Rezervoar za pitku vodu Borovnjak Kuršumlija": {
-            "sadrziSlike": true
-        }
+            "sadrziSlike": true,
+            "adresaSlike": "images/galerija/1/1/2.jpg"
+        },
+        "adresaSlike": "images/galerija/1/1/1.jpg"
     },
     "Objekti niskogradnje": {
         "sadrziSlike": false,
@@ -61,7 +65,8 @@ const galerijaPodaci = {
             "slika2": {
                 "adresaSlike": "images/galerija/2/1/2.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/1/1.jpg"
         },
         "Most u Prolom Banji": {
             "sadrziSlike": true,
@@ -104,7 +109,8 @@ const galerijaPodaci = {
             "slika10": {
                 "adresaSlike": "images/galerija/2/2/10.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/2/1.jpg"
         },
         "Projekti rekonstrukcija mostova": {
             "sadrziSlike": true,
@@ -143,7 +149,8 @@ const galerijaPodaci = {
             "slika9": {
                 "adresaSlike": "images/galerija/2/3/9.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/3/1.jpg"
         },
         "Rekonstrukcija ulice Svete Anu u Kuršumliji": {
             "sadrziSlike": true,
@@ -158,7 +165,8 @@ const galerijaPodaci = {
             "slika3": {
                 "adresaSlike": "images/galerija/2/4/3.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/4/1.jpg"
         },
         "Spoljno uređenje u okviru kompleksa Novi Niš": {
             "sadrziSlike": true,
@@ -185,7 +193,8 @@ const galerijaPodaci = {
             "slika6": {
                 "adresaSlike": "images/galerija/2/5/6.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/5/1.jpg"
         },
         "Teren za tenis u Lukovskoj Banji": {
             "sadrziSlike": true,
@@ -204,7 +213,8 @@ const galerijaPodaci = {
             "slika4": {
                 "adresaSlike": "images/galerija/2/6/4.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/2/6/1.jpg"
         },
         "Uređenje dvorišta Prokuplje": {
             "sadrziSlike": true,
@@ -223,8 +233,10 @@ const galerijaPodaci = {
             "slika4": {
                 "adresaSlike": "images/galerija/2/7/4.jpg",
                 "opisSlike": ""
-            }
-        }
+            },
+            "adresaSlike": "images/galerija/2/7/1.jpg"
+        },
+        "adresaSlike": "images/galerija/2/1/1.jpg"
     },
     "Objekti visokogradnje": {
         "sadrziSlike": false,
@@ -245,7 +257,8 @@ const galerijaPodaci = {
             "slika4": {
                 "adresaSlike": "images/galerija/3/1/4.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/1/1.jpg"
         },
         "Dogradnja doma za smeštaj starih lica Blace": {
             "sadrziSlike": true,
@@ -268,14 +281,16 @@ const galerijaPodaci = {
             "slika5": {
                 "adresaSlike": "images/galerija/3/2/5.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/2/1.jpg"
         },
         "Hala za smeštaj i remont opreme Prokuplje": {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/3/1.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/3/1.jpg"
         },
         "Projektovanje konstrukcije hale Prolom Vode u Prolom Banji": {
             "sadrziSlike": true,
@@ -290,14 +305,16 @@ const galerijaPodaci = {
             "slika3": {
                 "adresaSlike": "images/galerija/3/4/3.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/4/1.jpg"
         },
         "Rekonstrukcija krova tehničke škole u Prokuplju": {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/5/1.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/5/1.jpg"
         },
         "Rekonstrukcija krova zgrade opštine Prokuplje": {
             "sadrziSlike": true,
@@ -328,7 +345,8 @@ const galerijaPodaci = {
             "slika7": {
                 "adresaSlike": "images/galerija/3/6/7.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/6/1.jpg"
         },
         "Rekonstrukcija osnovne škole Miloje Zakić Kuršumlija": {
             "sadrziSlike": true,
@@ -351,7 +369,8 @@ const galerijaPodaci = {
             "slika5": {
                 "adresaSlike": "images/galerija/3/7/5.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/7/1.jpg"
         },
         "Stambena zgrada Prokuplje": {
             "sadrziSlike": true,
@@ -394,15 +413,18 @@ const galerijaPodaci = {
             "slika10": {
                 "adresaSlike": "images/galerija/3/8/10.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/3/8/1.jpg"
         },
         "Stambeni i poslovni objekti Prokuplje": {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/9/1.jpg",
                 "opisSlike": ""
-            }
-        }
+            },
+            "adresaSlike": "images/galerija/3/9/1.jpg"
+        },
+        "adresaSlike": "images/galerija/3/1/1.jpg"
     },
     "Specijalne konstrukcije": {
         "sadrziSlike": false,
@@ -423,14 +445,16 @@ const galerijaPodaci = {
             "slika4": {
                 "adresaSlike": "images/galerija/4/1/4.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/4/1/1.jpg"
         },
         "Projekat temelja za kolni mlin Ciglana Mala Plana": {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/4/2/1.jpg",
                 "opisSlike": ""
-            }
+            },
+            "adresaSlike": "images/galerija/4/2/1.jpg"
         }
     }
 };
@@ -473,15 +497,19 @@ function napraviGaleriju (trenutniPregled) {
     if (galerija.querySelector('.row') != null) {
         galerija.removeChild(galerija.querySelector('.row'));
     }
+    if (document.getElementById('baguetteBox-overlay') !== null) {
+        let baguetteRemove = document.getElementById('baguetteBox-overlay')
+        baguetteRemove.parentNode.removeChild(baguetteRemove);
+    }
     var galerijaRow = document.createElement('div');
     galerijaRow.className = 'row';
     var trenutniPregledLista = Object.entries(trenutniPregled)
     if (trenutniPregled.sadrziSlike === true) {
-        for (var i = 1; i < trenutniPregledLista.length; i++) {
+        for (var i = 1; i < trenutniPregledLista.length-1; i++) {
             galerijaRow.appendChild(elementGalerije(trenutniPregledLista[i], true));
         }
     } else {
-        for (var j = 1; j < trenutniPregledLista.length; j++) {
+        for (var j = 1; j < trenutniPregledLista.length-1; j++) {
             galerijaRow.appendChild(elementGalerije(trenutniPregledLista[j], false));
         }
     }
@@ -517,10 +545,10 @@ function elementGalerije (podaci, slika) {
         unutrasnjiTekst.innerText = podaci[0];
         unutrasnjiTekst.className = 'tekstPrekoSlike'
         element.className = 'col-sm-12 col-md-4 folder overlay';
-        element.style.backgroundImage = 'url(\'images/galerija/1/1/1.jpg\')';
+        element.style.backgroundImage = `url(${podaci[1]['adresaSlike']})`;
         element.appendChild(unutrasnjiTekst);
         element.appendChild(dummy);
-        element.addEventListener('click', x => otvoriChildObjekat(podaci[0]));
+        element.addEventListener('click', () => otvoriChildObjekat(podaci[0]));
         return element;
     }
 }

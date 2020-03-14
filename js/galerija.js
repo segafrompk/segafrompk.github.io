@@ -517,7 +517,7 @@ function elementGalerije (podaci, slika) {
         unutrasnjiTekst.innerText = podaci[0];
         unutrasnjiTekst.className = 'tekstPrekoSlike'
         element.className = 'col-sm-12 col-md-4 folder overlay';
-        element.style.backgroundImage = 'url(\'images/galerija/1.jpg\')';
+        element.style.backgroundImage = 'url(\'images/galerija/1/1/1.jpg\')';
         element.appendChild(unutrasnjiTekst);
         element.appendChild(dummy);
         element.addEventListener('click', x => otvoriChildObjekat(podaci[0]));

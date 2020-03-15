@@ -61,6 +61,7 @@ button:focus{
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
     border-radius: 4px;
+    cursor: pointer;
 }
   
 .folder * {
@@ -117,5 +118,12 @@ button:focus{
     height: 30px;
     width: auto;
     color: rgb(226, 94, 28);
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
   

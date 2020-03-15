@@ -81,7 +81,7 @@ button:focus{
     height:100%;
     z-index:0;
     border-radius: 4px;
-    background-color: rgba(105, 51, 0, 0.85);
+    background-color: rgba(199, 97, 0, 0.83);
 }
 
 .folder:hover {
@@ -103,10 +103,19 @@ button:focus{
     padding-top: 75%;
 }
   
-.dugmeNazad {
-    position: absolute;
+.stickyContainer {
+    position: relative;
+    float: left;
+    top: 30px;
     left: 200px;
+    height: calc(100vh - 90px);
+}
+
+.dugmeNazad {
+    position: sticky;
+    top: 30px;
     height: 30px;
     width: auto;
+    color: rgb(226, 94, 28);
 }
   

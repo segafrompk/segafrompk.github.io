@@ -517,6 +517,7 @@ function napraviGaleriju (trenutniPregled) {
     }
     galerija.appendChild(galerijaRow);
     poravnajTekst();
+    // eslint-disable-next-line no-undef
     baguetteBox.run('.gallery', {
         "overlayBackgroundColor": "rgba(0, 0, 0, 0.7)",
         "noScrollbars": "false",
@@ -540,6 +541,7 @@ function elementGalerije (podaci, slika) {
         return element;
     }
     else {
+        // eslint-disable-next-line no-redeclare
         var element = document.createElement('div');
         var unutrasnjiTekst = document.createElement('span');
         var dummy = document.createElement('div');

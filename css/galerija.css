@@ -19,6 +19,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 48.11%;
+        flex: 0 0 48.11%;
+        max-width: 48.11%;
+    }
+}
+
 button:focus{ 
     outline: 0;
 }

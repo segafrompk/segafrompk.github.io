@@ -508,11 +508,11 @@ function napraviGaleriju (trenutniPregled) {
     var trenutniPregledLista = Object.entries(trenutniPregled)
     if (trenutniPregled.sadrziSlike === true) {
         for (var i = 1; i < trenutniPregledLista.length-1; i++) {
-            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[i], true));
+            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[i], i, trenutniPregledLista.length-2, true));
         }
     } else {
         for (var j = 1; j < trenutniPregledLista.length-1; j++) {
-            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[j], false));
+            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[j], j, trenutniPregledLista.length-2, false));
         }
     }
     galerija.appendChild(galerijaRow);
@@ -525,9 +525,23 @@ function napraviGaleriju (trenutniPregled) {
       });
 }
 
-function elementGalerije (podaci, slika) {
-    if (slika) {
-        var element = document.createElement('div');
+function elementGalerije (podaci, i, brojElemenata, slika) {
+    console.log(i, brojElemenata)
+    var element = document.createElement('div');
+    if (brojElemenata <= 4 && brojElemenata !== 3) {
+        element.className = 'col-sm-12 col-md-6';
+    } else {
+        element.className = 'col-sm-12 col-md-4';
+    }
+    if (brojElemenata % 3 === 1 && i === brojElemenata) {
+        element.style.marginLeft = 'auto';
+        element.style.marginRight = 'auto';
+    } else if (brojElemenata % 3 === 2 && i === brojElemenata - 1) {
+        element.style.marginLeft = 'auto';
+    }   else if (brojElemenata % 3 === 2 && i === brojElemenata) {
+        element.style.marginRight = 'auto';
+    }
+    if (slika) {        
         var elementA = document.createElement('a');
         var innerImg = document.createElement('img');
         innerImg.className = 'element';
@@ -535,27 +549,26 @@ function elementGalerije (podaci, slika) {
         if (podaci[1].opisSlike !== "") elementA.setAttribute('data-caption', podaci[1].opisSlike)
         elementA.href = podaci[1].adresaSlike;
         elementA.className = 'lightbox';
-        element.className = 'col-sm-12 col-md-4';
         elementA.appendChild(innerImg);
         element.appendChild(elementA);
-        return element;
     }
     else {
         // eslint-disable-next-line no-redeclare
-        var element = document.createElement('div');
         var unutrasnjiTekst = document.createElement('span');
         var dummy = document.createElement('div');
         dummy.className = 'dummy';
         unutrasnjiTekst.innerText = podaci[0];
         unutrasnjiTekst.className = 'tekstPrekoSlike'
-        element.className = 'col-sm-12 col-md-4 folder overlay';
+        element.classList.add('folder');
+        element.classList.add('overlay');
         element.style.backgroundImage = `url(${podaci[1]['adresaSlike']})`;
         element.appendChild(unutrasnjiTekst);
         element.appendChild(dummy);
         element.addEventListener('click', () => otvoriChildObjekat(podaci[0]));
-        return element;
     }
+    return element;
 }
+
 function poravnajTekst() {
     document.querySelectorAll('.tekstPrekoSlike').forEach(x => {
         x.style.top = `calc(50% - ${x.offsetHeight/2}px)`;

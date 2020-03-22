@@ -98,34 +98,67 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-
-const sections = document.querySelectorAll('section');
+let currentAnchor;
 const bubble = document.querySelector('.bubble');
 
-const options = {
+const pocetnaOptions = {
   root: document.querySelector('.sitewindow'),
-  threshold: 0.7
+  threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 }
 
-let observer = new IntersectionObserver(navCheck, options);
+let pocetnaObserver = new IntersectionObserver(navCheck, pocetnaOptions);
+
+pocetnaObserver.observe(document.querySelector('#pocetna'));
+
+
+const uslugeOptions = {
+  root: document.querySelector('.sitewindow'),
+  threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+}
+
+let uslugeObserver = new IntersectionObserver(navCheck, uslugeOptions);
+
+uslugeObserver.observe(document.querySelector('#usluge'));
+
+const portfolioOptions = {
+  root: document.querySelector('.sitewindow'),
+  threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+}
+
+let portfolioObserver = new IntersectionObserver(navCheck, portfolioOptions);
+
+portfolioObserver.observe(document.querySelector('#portfolio'));
+
+
+const kontaktOptions = {
+  root: document.querySelector('.sitewindow'),
+  threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+}
+
+let kontaktObserver = new IntersectionObserver(navCheck, kontaktOptions);
+
+kontaktObserver.observe(document.querySelector('#kontakt'));
+
+/*const karijeraOptions = {
+  root: document.querySelector('.sitewindow'),
+  threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+}
+
+let karijeraObserver = new IntersectionObserver(navCheck, karijeraOptions);
+
+karijeraObserver.observe(document.querySelector('#karijera'));*/
 
 function navCheck(entries) {
+  let viewportPercentage = entries[0].intersectionRect.height / entries[0].rootBounds.height
+  /*console.log(entries[0].target.id + ": " + viewportPercentage);*/
   let windowResizeAnchor;
-  for (let entry of entries) {
-    const targetId = entry.target.id;
-    const activeAnchor = document.querySelector(`[data-page=${targetId}]`);
-    const navItems = document.querySelectorAll('nav ul li a');
-    const itemSize = activeAnchor.getBoundingClientRect();
-    windowResizeAnchor = activeAnchor;
-    if(entry.isIntersecting == true && entry.intersectionRatio != 0) {
-      bubble.style.setProperty('left', `${itemSize.left}px`);
-      bubble.style.setProperty('top', `${itemSize.top}px`);
-      bubble.style.setProperty('width', `${itemSize.width}px`);
-      bubble.style.setProperty('height', `${itemSize.height}px`);
-      navItems.forEach((item) => item.style.removeProperty('color'));
-      activeAnchor.style.setProperty('color', '#fff');
-      break;
-    }
+  const targetId = entries[0].target.id;
+  const activeAnchor = document.querySelector(`[data-page=${targetId}]`);
+  const navItems = document.querySelectorAll('nav ul li a');
+  windowResizeAnchor = activeAnchor;
+  if(viewportPercentage > 0.5 && currentAnchor !== targetId) {
+    currentAnchor = targetId;
+    setMenuBubble(navItems, activeAnchor);
   }
   
   window.addEventListener("resize", () => {
@@ -137,15 +170,21 @@ function navCheck(entries) {
   })
 }
 
-sections.forEach(section => {
-  observer.observe(section);
-})
+function setMenuBubble (navItems, activeAnchor) {
+  const itemSize = activeAnchor.getBoundingClientRect();
+  bubble.style.setProperty('left', `${itemSize.left}px`);
+  bubble.style.setProperty('top', `${itemSize.top}px`);
+  bubble.style.setProperty('width', `${itemSize.width}px`);
+  bubble.style.setProperty('height', `${itemSize.height}px`);
+  navItems.forEach((item) => item.style.removeProperty('color'));
+  activeAnchor.style.setProperty('color', '#fff');
+}
 
-const options2 = {
+const logoObserver = {
   threshold: 0.05
 }
 
-let observer2 = new IntersectionObserver(navCheck2, options2);
+let observer2 = new IntersectionObserver(navCheck2, logoObserver);
 
 function navCheck2(entry) {
   if (!entry[0].isIntersecting) {

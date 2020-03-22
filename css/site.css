@@ -188,6 +188,16 @@ a:active {
   min-height: calc(100vh - 60px) !important;
 }
 
+.kontaktcontainer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kontaktpodaci {
+  align-self: center;
+}
+
 .slideUsluge {
   height: 100%;
   display: flex;

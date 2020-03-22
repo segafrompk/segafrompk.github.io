@@ -526,7 +526,6 @@ function napraviGaleriju (trenutniPregled) {
 }
 
 function elementGalerije (podaci, i, brojElemenata, slika) {
-    console.log(i, brojElemenata)
     var element = document.createElement('div');
     if (brojElemenata <= 4 && brojElemenata !== 3) {
         element.className = 'col-sm-12 col-md-6';

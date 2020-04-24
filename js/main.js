@@ -120,14 +120,14 @@ let uslugeObserver = new IntersectionObserver(navCheck, uslugeOptions);
 
 uslugeObserver.observe(document.querySelector('#usluge'));
 
-const portfolioOptions = {
+const galerijaOptions = {
   root: document.querySelector('.sitewindow'),
   threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 }
 
-let portfolioObserver = new IntersectionObserver(navCheck, portfolioOptions);
+let galerijaObserver = new IntersectionObserver(navCheck, galerijaOptions);
 
-portfolioObserver.observe(document.querySelector('#portfolio'));
+galerijaObserver.observe(document.querySelector('#galerija'));
 
 
 const kontaktOptions = {

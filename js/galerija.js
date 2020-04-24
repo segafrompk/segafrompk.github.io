@@ -48,10 +48,6 @@ const galerijaPodaci = {
             },
             "adresaSlike": "images/galerija/1/2/1.jpg"
         },
-        "Rezervoar za pitku vodu Borovnjak Kuršumlija": {
-            "sadrziSlike": true,
-            "adresaSlike": "images/galerija/1/1/2.jpg"
-        },
         "adresaSlike": "images/galerija/1/1/1.jpg"
     },
     "Objekti niskogradnje": {
@@ -236,7 +232,7 @@ const galerijaPodaci = {
             },
             "adresaSlike": "images/galerija/2/7/1.jpg"
         },
-        "adresaSlike": "images/galerija/2/1/1.jpg"
+        "adresaSlike": "images/galerija/2/5/4.jpg"
     },
     "Objekti visokogradnje": {
         "sadrziSlike": false,
@@ -290,7 +286,23 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/3/1.jpg",
                 "opisSlike": ""
             },
-            "adresaSlike": "images/galerija/3/3/1.jpg"
+            "slika2": {
+                "adresaSlike": "images/galerija/3/3/2.jpg",
+                "opisSlike": ""
+            },
+            "slika3": {
+                "adresaSlike": "images/galerija/3/3/3.jpg",
+                "opisSlike": ""
+            },
+            "slika4": {
+                "adresaSlike": "images/galerija/3/3/4.jpg",
+                "opisSlike": ""
+            },
+            "slika5": {
+                "adresaSlike": "images/galerija/3/3/5.jpg",
+                "opisSlike": ""
+            },
+            "adresaSlike": "images/galerija/3/3/3.jpg"
         },
         "Projektovanje konstrukcije hale Prolom Vode u Prolom Banji": {
             "sadrziSlike": true,
@@ -414,12 +426,20 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/8/10.jpg",
                 "opisSlike": ""
             },
-            "adresaSlike": "images/galerija/3/8/1.jpg"
+            "adresaSlike": "images/galerija/3/8/4.jpg"
         },
         "Stambeni i poslovni objekti Prokuplje": {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/9/1.jpg",
+                "opisSlike": ""
+            },
+            "slika2": {
+                "adresaSlike": "images/galerija/3/9/2.jpg",
+                "opisSlike": ""
+            },
+            "slika3": {
+                "adresaSlike": "images/galerija/3/9/3.jpg",
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/3/9/1.jpg"
@@ -446,7 +466,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/4/1/4.jpg",
                 "opisSlike": ""
             },
-            "adresaSlike": "images/galerija/4/1/1.jpg"
+            "adresaSlike": "images/galerija/4/1/2.jpg"
         },
         "Projekat temelja za kolni mlin Ciglana Mala Plana": {
             "sadrziSlike": true,
@@ -456,7 +476,7 @@ const galerijaPodaci = {
             },
             "adresaSlike": "images/galerija/4/2/1.jpg"
         },
-        "adresaSlike": "images/galerija/4/1/1.jpg"
+        "adresaSlike": "images/galerija/4/1/2.jpg"
     },
     "dummy": "dummy"
 };
@@ -496,42 +516,61 @@ function otvoriChildObjekat (imeChildObjekta) {
 
 function napraviGaleriju (trenutniPregled) {
     var galerija = document.querySelector('.gallery');
-    if (galerija.querySelector('.row') != null) {
-        galerija.removeChild(galerija.querySelector('.row'));
+    if (galerija.querySelector('.red') != null) {
+        galerija.removeChild(galerija.querySelector('.red'));
     }
     if (document.getElementById('baguetteBox-overlay') !== null) {
         let baguetteRemove = document.getElementById('baguetteBox-overlay')
         baguetteRemove.parentNode.removeChild(baguetteRemove);
     }
-    var galerijaRow = document.createElement('div');
-    galerijaRow.className = 'row';
+    var galerijaRed = document.createElement('div');
+    galerijaRed.className = 'red';
     var trenutniPregledLista = Object.entries(trenutniPregled)
     if (trenutniPregled.sadrziSlike === true) {
         for (var i = 1; i < trenutniPregledLista.length-1; i++) {
-            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[i], i, trenutniPregledLista.length-2, true));
+            galerijaRed.appendChild(elementGalerije(trenutniPregledLista[i], i, trenutniPregledLista.length-2, true));
         }
     } else {
         for (var j = 1; j < trenutniPregledLista.length-1; j++) {
-            galerijaRow.appendChild(elementGalerije(trenutniPregledLista[j], j, trenutniPregledLista.length-2, false));
+            galerijaRed.appendChild(elementGalerije(trenutniPregledLista[j], j, trenutniPregledLista.length-2, false));
         }
     }
-    galerija.appendChild(galerijaRow);
+    console.log(trenutniPregledLista.length);
+    if (trenutniPregledLista.length < 7) {
+        galerijaRed.classList.add('red2');
+    } else {
+        galerijaRed.classList.add('red1');
+    }
+
+    galerija.appendChild(galerijaRed);
     poravnajTekst();
     // eslint-disable-next-line no-undef
     baguetteBox.run('.gallery', {
         "overlayBackgroundColor": "rgba(0, 0, 0, 0.7)",
         "noScrollbars": "false",
         "animation": "slideIn"
-      });
+    });
+    if (trenutniPregled.sadrziSlike === true) {
+        setTimeout(() => { 
+            portraitOrLandscape()
+        }, 100);
+    }
+}
+
+function portraitOrLandscape() {
+    var slike = document.querySelectorAll('.slika')
+    for(let x = 0; x < slike.length; x++) {
+        var slikaZaSelektovanje = slike[x].querySelector('.element')
+        if (slikaZaSelektovanje.naturalHeight > slikaZaSelektovanje.naturalWidth) {
+            slike[x].classList.add('portrait');
+        } else {
+            slike[x].classList.add('landscape');
+        }
+    }
 }
 
 function elementGalerije (podaci, i, brojElemenata, slika) {
     var element = document.createElement('div');
-    if (brojElemenata <= 4 && brojElemenata !== 3) {
-        element.className = 'col-sm-12 col-md-6';
-    } else {
-        element.className = 'col-sm-12 col-md-4';
-    }
     if (brojElemenata % 3 === 1 && i === brojElemenata) {
         element.style.marginLeft = 'auto';
         element.style.marginRight = 'auto';
@@ -550,6 +589,7 @@ function elementGalerije (podaci, i, brojElemenata, slika) {
         elementA.className = 'lightbox';
         elementA.appendChild(innerImg);
         element.appendChild(elementA);
+        element.classList.add('slika');
     }
     else {
         // eslint-disable-next-line no-redeclare
@@ -560,6 +600,7 @@ function elementGalerije (podaci, i, brojElemenata, slika) {
         unutrasnjiTekst.className = 'tekstPrekoSlike'
         element.classList.add('folder');
         element.classList.add('overlay');
+        element.classList.add('landscape');
         element.style.backgroundImage = `url(${podaci[1]['adresaSlike']})`;
         element.appendChild(unutrasnjiTekst);
         element.appendChild(dummy);

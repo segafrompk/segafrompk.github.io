@@ -1,5 +1,4 @@
 @import url("typewritter.css");
-/*@import url("picmenu.css");*/
 @import url("galerija.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @font-face {
@@ -133,7 +132,7 @@ a:active {
   position: absolute;
   top: 0;
   background-image: url("../images/hero.png");
-  background-size: cover;
+  object-fit: cover;
   background-position-x: right;
   background-attachment: fixed;
 }
@@ -158,8 +157,6 @@ a:active {
   margin-top: 80px;
   margin-left: 80px;
   padding: 20px;
-  /* border-radius: 30px;
-  box-shadow: 0 0 2px 1px rgba(242, 242, 244, 0.9); */
   color: rgb(48, 52, 74);
   font-size: 1.1rem;
   text-align: center;
@@ -186,16 +183,6 @@ a:active {
 
 #portfolio {
   min-height: calc(100vh - 60px) !important;
-}
-
-.kontaktcontainer {
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.kontaktpodaci {
-  align-self: center;
 }
 
 .slideUsluge {
@@ -243,4 +230,21 @@ a:active {
   background-position: center;
   flex: 1;
   height: 100%;
+}
+
+.kontaktcontainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.kontaktpodaci {
+  align-self: center;
+}
+
+
+.mapa {
+  height: calc(100vh - 180px);
+  width: 1000px;
+  align-self: center;
 }

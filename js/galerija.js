@@ -24,6 +24,7 @@ const galerijaPodaci = {
             },
             "slika5": {
                 "adresaSlike": "images/galerija/1/1/5.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika6": {
@@ -40,6 +41,7 @@ const galerijaPodaci = {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/1/2/1.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika2": {
@@ -76,10 +78,12 @@ const galerijaPodaci = {
             },
             "slika3": {
                 "adresaSlike": "images/galerija/2/2/3.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika4": {
                 "adresaSlike": "images/galerija/2/2/4.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika5": {
@@ -92,10 +96,12 @@ const galerijaPodaci = {
             },
             "slika7": {
                 "adresaSlike": "images/galerija/2/2/7.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika8": {
                 "adresaSlike": "images/galerija/2/2/8.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika9": {
@@ -132,14 +138,17 @@ const galerijaPodaci = {
             },
             "slika6": {
                 "adresaSlike": "images/galerija/2/3/6.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika7": {
                 "adresaSlike": "images/galerija/2/3/7.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika8": {
                 "adresaSlike": "images/galerija/2/3/8.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika9": {
@@ -152,6 +161,7 @@ const galerijaPodaci = {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/2/4/1.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika2": {
@@ -184,6 +194,7 @@ const galerijaPodaci = {
             },
             "slika5": {
                 "adresaSlike": "images/galerija/2/5/5.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika6": {
@@ -204,10 +215,12 @@ const galerijaPodaci = {
             },
             "slika3": {
                 "adresaSlike": "images/galerija/2/6/3.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika4": {
                 "adresaSlike": "images/galerija/2/6/4.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/2/6/1.jpg"
@@ -260,22 +273,27 @@ const galerijaPodaci = {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/2/1.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika2": {
                 "adresaSlike": "images/galerija/3/2/2.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika3": {
                 "adresaSlike": "images/galerija/3/2/3.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika4": {
                 "adresaSlike": "images/galerija/3/2/4.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika5": {
                 "adresaSlike": "images/galerija/3/2/5.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/3/2/1.jpg"
@@ -332,6 +350,7 @@ const galerijaPodaci = {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/6/1.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika2": {
@@ -344,6 +363,7 @@ const galerijaPodaci = {
             },
             "slika4": {
                 "adresaSlike": "images/galerija/3/6/4.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika5": {
@@ -356,6 +376,7 @@ const galerijaPodaci = {
             },
             "slika7": {
                 "adresaSlike": "images/galerija/3/6/7.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/3/6/1.jpg"
@@ -400,6 +421,7 @@ const galerijaPodaci = {
             },
             "slika4": {
                 "adresaSlike": "images/galerija/3/8/4.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika5": {
@@ -416,6 +438,7 @@ const galerijaPodaci = {
             },
             "slika8": {
                 "adresaSlike": "images/galerija/3/8/8.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika9": {
@@ -424,6 +447,7 @@ const galerijaPodaci = {
             },
             "slika10": {
                 "adresaSlike": "images/galerija/3/8/10.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "adresaSlike": "images/galerija/3/8/4.jpg"
@@ -432,10 +456,12 @@ const galerijaPodaci = {
             "sadrziSlike": true,
             "slika1": {
                 "adresaSlike": "images/galerija/3/9/1.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika2": {
                 "adresaSlike": "images/galerija/3/9/2.jpg",
+                "portrait": true,
                 "opisSlike": ""
             },
             "slika3": {
@@ -535,7 +561,6 @@ function napraviGaleriju (trenutniPregled) {
             galerijaRed.appendChild(elementGalerije(trenutniPregledLista[j], j, trenutniPregledLista.length-2, false));
         }
     }
-    console.log(trenutniPregledLista.length);
     if (trenutniPregledLista.length < 7) {
         galerijaRed.classList.add('red2');
     } else {
@@ -550,24 +575,24 @@ function napraviGaleriju (trenutniPregled) {
         "noScrollbars": "false",
         "animation": "slideIn"
     });
-    if (trenutniPregled.sadrziSlike === true) {
-        setTimeout(() => { 
-            portraitOrLandscape()
-        }, 1000);
-    }
+    // if (trenutniPregled.sadrziSlike === true) {
+    //     setTimeout(() => { 
+    //         portraitOrLandscape()
+    //     }, 1000);
+    // }
 }
 
-function portraitOrLandscape() {
-    var slike = document.querySelectorAll('.slika')
-    for(let x = 0; x < slike.length; x++) {
-        var slikaZaSelektovanje = slike[x].querySelector('.element')
-        if (slikaZaSelektovanje.naturalHeight > slikaZaSelektovanje.naturalWidth) {
-            slike[x].classList.add('portrait');
-        } else {
-            slike[x].classList.add('landscape');
-        }
-    }
-}
+// function portraitOrLandscape() {
+//     var slike = document.querySelectorAll('.slika')
+//     for(let x = 0; x < slike.length; x++) {
+//         var slikaZaSelektovanje = slike[x].querySelector('.element')
+//         if (slikaZaSelektovanje.naturalHeight > slikaZaSelektovanje.naturalWidth) {
+//             slike[x].classList.add('portrait');
+//         } else {
+//             slike[x].classList.add('landscape');
+//         }
+//     }
+// }
 
 function elementGalerije (podaci, i, brojElemenata, slika) {
     var element = document.createElement('div');
@@ -585,6 +610,11 @@ function elementGalerije (podaci, i, brojElemenata, slika) {
         innerImg.className = 'element';
         innerImg.src = podaci[1].adresaSlike;
         if (podaci[1].opisSlike !== "") elementA.setAttribute('data-caption', podaci[1].opisSlike)
+        if (podaci[1].portrait) {
+            element.classList.add('portrait');
+        } else {
+            element.classList.add('landscape');
+        }
         elementA.href = podaci[1].adresaSlike;
         elementA.className = 'lightbox';
         elementA.appendChild(innerImg);

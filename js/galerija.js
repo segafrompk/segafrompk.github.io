@@ -553,7 +553,7 @@ function napraviGaleriju (trenutniPregled) {
     if (trenutniPregled.sadrziSlike === true) {
         setTimeout(() => { 
             portraitOrLandscape()
-        }, 100);
+        }, 1000);
     }
 }
 

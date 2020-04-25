@@ -183,6 +183,10 @@ a:active {
 
 #galerija {
   min-height: calc(100vh - 60px) !important;
+  background-image: url("../images/hero.png");
+  object-fit: cover;
+  background-position-x: right;
+  background-attachment: fixed;
 }
 
 .buttonContainer {

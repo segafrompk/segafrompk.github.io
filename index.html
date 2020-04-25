@@ -84,7 +84,7 @@
         </div>-->
 
       </section>
-      <section data-index="1" id="usluge" class="page">
+      <!-- <section data-index="1" id="usluge" class="page">
         <div id="carouselUsluge" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -138,6 +138,56 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </section> -->
+      
+      <section data-index="1" id="usluge" class="page">
+        <div class="buttonContainer">
+          <button class="tablink" onclick="otvoriUslugu('izradaDokumentacije', this)"  id="defaultOpen">Izrada dokumentacije</button>
+          <button class="tablink" onclick="otvoriUslugu('gradjevinskiRadovi', this)">Građevinski radovi</button>
+          <button class="tablink" onclick="otvoriUslugu('stolarija', this)">Stolarija</button>
+        </div>
+
+        <div class="tabcontent"  id="izradaDokumentacije">
+          <div class="slideUsluge">
+            <div class="page1img"></div>
+            <div class="pagetext">
+              <p class="uslugeNaslov"><strong>Izrada projektne dokumentacije</strong></p>
+              <p>Posebnu pažnju u radu poklanjamo projektovanju građevinskih konstrukcija, kao i projektima objekata niskogradnje dok druge vrste projekata ostvarujemo kroz kooperaciju sa saradnicima usko specijalizovanim za svoje oblasti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="gradjevinskiRadovi">
+          <div class="slideUsluge">
+            <div class="page2img"></div>
+            <div class="pagetext">
+              <p class="uslugeNaslov"><strong>Građevinski radovi</strong></p>
+              <p>Modeling d.o.o. Prokuplje se dokazao kao pouzdani izvođač svih građevinskih radova:
+                <ol>
+                  <li><span class="uslugeBitno">Objekti visokogradnje</span><br>
+                  Čitav spektar raznih građevinskih radova koji obuhvataju zemljane radove, grube građevinske radove, završne i instalaterske radove. Razumemo kakva je odgovornost graditi nečiji dom.</li><br>
+                  <li><span class="uslugeBitno">Objekti niskogradnje</span><br>
+                  Dokazali smo se kao pouzdani izvođači modernih saobrađajnih konstrukcija. Popločanja glavnih gradskih trgova, kao i spoljna uređenja stambenih zgrada daju prostoru poseban pečat. Kvalitet ovih radova garantuje i saradnja sa renomiranim domaćim firmama iz ove oblasti. Stavljamo Vam naše iskustvo na raspolaganje.</li><br>
+                  <li><span class="uslugeBitno">Hidrotehnički objekti</span><br>
+                  Ova vrsta objekata zahteva posebnu preciznost, primenu kvalitetne i moderne opreme. Izgradili smo veliki broj rezervoara za pitku vodu, radili smo na razvodima spoljne i unutrašnje instalacije vodovoda i kanalizacije.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="stolarija">
+          <div class="slideUsluge">
+            <div class="page3img"></div>
+            <div class="pagetext">
+              <p class="uslugeNaslov"><strong>Proizvodnja fasadne građevinske stolarije</strong></p>
+              <p>
+                <ol>
+                  <li><span class="uslugeBitno">PVC stolarija</span></li>
+                  <li><span class="uslugeBitno">Aluminijumska stolarija</span></li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section data-index="2" id="galerija">
@@ -163,6 +213,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/baguetteBox.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="js/galerija.js"></script>
+    <script type="text/javascript" src="js/galerija.js"></script>
   </body>
 </html>

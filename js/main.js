@@ -98,6 +98,27 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+// eslint-disable-next-line no-unused-vars
+function otvoriUslugu(pageName,elmnt) {
+  var tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (var j = 0; j < tablinks.length; j++) {
+    tablinks[j].style.backgroundColor = "";
+    tablinks[j].style.color = "";
+  }
+  console.log(pageName);
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = "rgb(226, 94, 28)";
+  elmnt.style.color = "white";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 let currentAnchor;
 const bubble = document.querySelector('.bubble');
 

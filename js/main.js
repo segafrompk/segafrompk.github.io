@@ -160,14 +160,14 @@ let kontaktObserver = new IntersectionObserver(navCheck, kontaktOptions);
 
 kontaktObserver.observe(document.querySelector('#kontakt'));
 
-/*const karijeraOptions = {
+const karijeraOptions = {
   root: document.querySelector('.sitewindow'),
   threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 }
 
 let karijeraObserver = new IntersectionObserver(navCheck, karijeraOptions);
 
-karijeraObserver.observe(document.querySelector('#karijera'));*/
+karijeraObserver.observe(document.querySelector('#karijera'));
 
 function navCheck(entries) {
   let viewportPercentage = entries[0].intersectionRect.height / entries[0].rootBounds.height

@@ -101,12 +101,16 @@ button:focus{
 .dummy {
     padding-top: 75%;
 }
-  
+
+.container {
+    margin-left: 150px;
+}
+
 .stickyContainer {
     position: relative;
     float: left;
     top: 40px;
-    left: 200px;
+    left: 100px;
     height: calc(100vh - 140px);
 }
 

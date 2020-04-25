@@ -80,13 +80,17 @@ button:focus{
     height:100%;
     z-index:0;
     border-radius: 4px;
+    transition: 0.2s ease-in-out;
     background-color: rgba(199, 97, 0, 0.75);
 }
 
 .folder:hover {
     transform: scale(1.03);
-    filter: opacity(0.75);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.overlay:hover::before {
+    background-color: rgba(243, 146, 55, 0.75);
 }
   
 .tekstPrekoSlike {
@@ -102,15 +106,11 @@ button:focus{
     padding-top: 75%;
 }
 
-.container {
-    margin-left: 150px;
-}
-
 .stickyContainer {
     position: relative;
     float: left;
     top: 40px;
-    left: 100px;
+    left: 200px;
     height: calc(100vh - 140px);
 }
 

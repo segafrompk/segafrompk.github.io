@@ -321,6 +321,17 @@ button {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: modalOpacityOn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: modalOpacityOn;
+  animation-duration: 0.4s;
+}
+
+.modal-izlaz {
+  -webkit-animation-name: modalOpacityOff;
+  -webkit-animation-duration: 0.4s;
+  animation-name: modalOpacityOff;
+  animation-duration: 0.4s;
 }
 
 .modalButton {
@@ -343,7 +354,14 @@ button {
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+}
+
+.modal-sadrzaj-izlaz {
+  -webkit-animation-name: animateexit;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateexit;
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
@@ -355,6 +373,36 @@ button {
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
+}
+
+@-webkit-keyframes animateexit {
+  from {top:0px; opacity:1}
+  to {top:-300px; opacity:0}
+}
+
+@keyframes animateexit {
+  from {top:0px; opacity:1}
+  to {top:-300px; opacity:0}
+}
+
+@-webkit-keyframes modalOpacityOn {
+  from {opacity:0} 
+  to {opacity:1}
+}
+
+@keyframes modalOpacityOn {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+@-webkit-keyframes modalOpacityOff {
+  from {opacity:1}
+  to {opacity:0}
+}
+
+@keyframes modalOpacityOff {
+  from {opacity:1}
+  to {opacity:0}
 }
 
 /* The Close Button */
@@ -408,7 +456,11 @@ form {
 label {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  /*width: 80%;*/
+  width: 80%;
+}
+
+input {
+  width: 100%;
 }
 
 .posaljiFormular {

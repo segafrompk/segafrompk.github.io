@@ -228,6 +228,8 @@ var btn = document.querySelector(".modalButton");
 // Get the <span> element that closes the modal
 var span = document.querySelector(".zatvori");
 
+var modalSadrzaj = modal.querySelector('.modal-sadrzaj');
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -235,13 +237,25 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modalSadrzaj.classList.add('modal-sadrzaj-izlaz');
+  modal.classList.add('modal-izlaz');
+  setTimeout(() => {
+    modal.style.display = "none";
+    modalSadrzaj.classList.remove('modal-sadrzaj-izlaz');
+    modal.classList.remove('modal-izlaz');
+  }, 400);
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modalSadrzaj.classList.add('modal-sadrzaj-izlaz');
+    modal.classList.add('modal-izlaz');
+    setTimeout(() => {
+      modal.style.display = "none";
+      modalSadrzaj.classList.remove('modal-sadrzaj-izlaz');
+      modal.classList.remove('modal-izlaz');
+    }, 400);
   }
 }
 
@@ -263,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.target.setCustomValidity("Molimo unesite Vaše prezime");
             break;
           case "broj":
-            e.target.setCustomValidity("Molimo unesite Vaš broj telefona u formatu 38163111111");
+            e.target.setCustomValidity("Molimo unesite Vaš broj telefona u ispravnom formatu: +381631111111, 381631111111 ili 0631111111");
             break;
           case "email":
             e.target.setCustomValidity("Molimo unesite Vašu validnu e-mail adresu");

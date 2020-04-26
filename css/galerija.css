@@ -126,6 +126,7 @@ button:focus{
     position: absolute;
     font-size: 1.4rem;
     color: #ffffff;
+    user-select: none;
   }
   
 .dummy {

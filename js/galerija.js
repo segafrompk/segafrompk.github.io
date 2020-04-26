@@ -589,7 +589,7 @@ function napraviGaleriju (trenutniPregled) {
             galerijaRed.appendChild(elementGalerije(trenutniPregledLista[j], j, trenutniPregledLista.length-2, false));
         }
     }
-    if (trenutniPregledLista.length < 7) {
+    if (trenutniPregledLista.length < 8) {
         galerijaRed.classList.add('red2');
     } else {
         galerijaRed.classList.add('red1');

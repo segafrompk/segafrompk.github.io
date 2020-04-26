@@ -181,8 +181,10 @@
               <p class="uslugeNaslov"><strong>Proizvodnja fasadne građevinske stolarije</strong></p>
               <p>
                 <ol>
-                  <li><span class="uslugeBitno">PVC stolarija</span></li>
-                  <li><span class="uslugeBitno">Aluminijumska stolarija</span></li>
+                  <li><span class="uslugeBitno">PVC stolarija</span><br>
+                    Posedujemo kompletnu liniju za proizvodnju PVC stolarije koju izrađujemo u saradnji sa dobro poznatim nemačkim firmama okupljenim u Profine grupi. Od samog početka proizvodnje stavili smo kvalitet na prvo mesto i ne pravimo kompromise kako bi bili konkurentniji na tržištu</li><br>
+                  <li><span class="uslugeBitno">Aluminijumska stolarija</span><br>
+                    Aluminijumsku stolariju proizvodimo od profila renomiranog proizvođača Alumil. Preporučujemo ovu vrstu stolarije svuda gde je potrebno osugurati dug period eksploatacije pri pojačanom intenzitetu korišćenja, kao i kod statički zahtevnih konstrukvija sa velikim površinama i rasponima</li>
                 </ol>
               </p>
             </div>
@@ -231,13 +233,13 @@
             <div class="formular">
               <div>
                 <label for="ime">Ime:<br>
-                  <input type="text" class="formularPolja" id="ime" name="ime" placeholder="Marko" required>
+                  <input type="text" class="formularPolja" id="ime" name="ime" pattern="^[a-zA-Z]{2,}$" placeholder="Petar" required>
                 </label><br>
                 <label for="prezime">Prezime:<br>
-                  <input type="text" class="formularPolja" id="prezime" name="prezime" placeholder="Marković" required>
+                  <input type="text" class="formularPolja" id="prezime" name="prezime" placeholder="Petrović" pattern="^[a-zA-Z]{2,}$" required>
                 </label>
                 <label for="broj">Broj telefona:<br>
-                  <input type="text" class="formularPolja" id="broj" name="broj" placeholder="+381 63 11 11 111" pattern="^[0-9]{11,12}$" required>
+                  <input type="text" class="formularPolja" id="broj" name="broj" placeholder="+381 63 11 11 111" pattern="^((\+?381)|0)[0-9]{8,9}$" required>
                 </label>
                 <label for="email">E-mail:<br>
                   <input type="text" class="formularPolja" id="email" name="email" placeholder="marko.markovic@gmail.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>

@@ -110,7 +110,6 @@ function otvoriUslugu(pageName,elmnt) {
     tablinks[j].style.backgroundColor = "";
     tablinks[j].style.color = "";
   }
-  console.log(pageName);
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = "rgb(226, 94, 28)";
   elmnt.style.color = "white";
@@ -219,3 +218,70 @@ function navCheck2(entry) {
 }
 
 observer2.observe(document.querySelector('.logo'));
+
+// Get the modal
+var modal = document.getElementById("posaljiCV");
+
+// Get the button that opens the modal
+var btn = document.querySelector(".modalButton");
+
+// Get the <span> element that closes the modal
+var span = document.querySelector(".zatvori");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+document.querySelector('.posaljiFormular').addEventListener('click', () => {
+  //event.preventDefault();
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+  var elements = document.querySelectorAll(".formularPolja");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].oninvalid = function(e) {
+      e.target.setCustomValidity("");
+      if (!e.target.validity.valid) {
+        switch(e.target.id) {
+          case "ime":
+            e.target.setCustomValidity("Molimo unesite Vaše ime");
+            break;
+          case "prezime":
+            e.target.setCustomValidity("Molimo unesite Vaše prezime");
+            break;
+          case "broj":
+            e.target.setCustomValidity("Molimo unesite Vaš broj telefona u formatu 38163111111");
+            break;
+          case "email":
+            e.target.setCustomValidity("Molimo unesite Vašu validnu e-mail adresu");
+            break;
+          case "cvdokument":
+            e.target.setCustomValidity("Molimo priložite Vaš CV u obliku pdf, doc ili docx fajla");
+            break;
+          case "zasto":
+            e.target.setCustomValidity("Molimo napišite zašto smatrate da treba da dobijete posao");
+            break;
+          default:
+            e.target.setCustomValidity("Ovo polje ne sme ostati prazno!");
+            break;
+        }
+      }
+    };
+    elements[i].oninput = function(e) {
+      e.target.setCustomValidity("");
+    };
+  }
+})

@@ -203,7 +203,11 @@
       </section>
 
       <section id="karijera" class="page">
-        <div class="karijeraTekst">Preduzeće Modeling teži stalnom uvećanju poslovnih kapaciteta, pa je iz tog razloga konkurs za zapošljenje uvek otvoren. Tražimo odgovorne i preduzimljive ljude za radove na izvođenju građevinskih radova, organizaciji i projektovanju svih vrsta građevinskih konstrukcija. U koliko smatrate da je ovo prava sredina za Vas, ovde možete poslati vaš CV, a mi ćemo Vam u  najkraćem roku odgovoriti.</div>
+        <div class="karijeraTekst">Preduzeće Modeling teži stalnom uvećanju poslovnih kapaciteta, pa je iz tog razloga konkurs za zapošljenje uvek otvoren. Tražimo odgovorne i preduzimljive ljude za radove na izvođenju građevinskih radova, organizaciji i projektovanju svih vrsta građevinskih konstrukcija. U koliko smatrate da je ovo prava sredina za Vas, ovde možete poslati vaš CV, a mi ćemo Vam u  najkraćem roku odgovoriti.<br>
+          <button class="modalButton">Pošaljite Vaš CV</button>
+        </div>
+
+    
       </section>
 
       <section data-index="3" id="kontakt" class="page">
@@ -212,9 +216,51 @@
         <div class="kontaktpodaci">Adresa: Ratka Pavlovića 122, 18400 Prokuplje<br>Telefon: +381 27 324 711<br>E-mail: modelingprokuplje@gmail.com<br>Radno vreme: 7-17h svakim radnim danom i subotom</div></div>
       </section>
     </main>
+
+    <!-- The Modal -->
+    <div id="posaljiCV" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-sadrzaj">
+        <div class="modal-naslov">
+          <div class="modalNaslovTekst">Vaša prijava za posao</div>
+          <span class="zatvori">&times;</span>
+        </div>
+        <div class="modal-telo">
+          <form action="">
+            <div class="formular">
+              <div>
+                <label for="ime">Ime:<br>
+                  <input type="text" class="formularPolja" id="ime" name="ime" placeholder="Marko" required>
+                </label><br>
+                <label for="prezime">Prezime:<br>
+                  <input type="text" class="formularPolja" id="prezime" name="prezime" placeholder="Marković" required>
+                </label>
+                <label for="broj">Broj telefona:<br>
+                  <input type="text" class="formularPolja" id="broj" name="broj" placeholder="+381 63 11 11 111" pattern="^[0-9]{11,12}$" required>
+                </label>
+                <label for="email">E-mail:<br>
+                  <input type="text" class="formularPolja" id="email" name="email" placeholder="marko.markovic@gmail.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+                </label>
+                <label for="cvdokument">Priložite Vaš CV:
+                  <input type="file" class="formularPolja" id="cvdokument" name="cvdokument" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf" required>
+                </label>
+              </div>
+              <div>
+                <label for="zasto">Zašto Vi?<br>
+                  <textarea type="text" class="formularPolja" id="zasto" name="zasto" rows="10" cols="40" placeholder="Zašto baš Vi?" required></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="posaljiFormular">Pošalji CV</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
     
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="js/baguetteBox.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/galerija.js"></script>

@@ -35,7 +35,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/1/1/7.jpg",
                 "opisSlike": ""
             },
-            "opisAlbuma": "Radovi na priljučenju vodovodne i kanalizacione mreže na uličnu mrežu trenutno jednog od najvećih projekata u Nišu. Posao ostvaren kroz saradnju sa preduzećem Vodogradnja d.o.o. iz Niša.",
+            "opisAlbuma": "Radovi na priključenju vodovodne i kanalizacione mreže na uličnu mrežu trenutno jednog od najvećih projekata u Nišu. Posao ostvaren kroz saradnju sa preduzećem Vodogradnja d.o.o. iz Niša.",
             "adresaSlike": "images/galerija/1/1/1.jpg",
         },
         "Kanalizacioni i vodomerni šahtovi u okviru kompleksa Novi Niš": {
@@ -66,7 +66,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/1/2.jpg",
                 "opisSlike": ""
             },
-            "opisAlbuma": "Izvođenje i projetovanje obalnih stubova mosta u selu Kupinovo, u neposrednoj blizini parka prirode \"Đavolja Varoš\". Po okončanju stubova, montirana je čelična mostovska konstrukcija koja do dan danas služi meštamina sela.",
+            "opisAlbuma": "Izvođenje i projetovanje obalnih stubova mosta u selu Kupinovo, u neposrednoj blizini parka prirode \"Đavolja Varoš\". Po okončanju stubova, montirana je čelična mostovska konstrukcija koja do dan danas služi meštanima sela.",
             "adresaSlike": "images/galerija/2/1/1.jpg"
         },
         "Most u Prolom Banji": {

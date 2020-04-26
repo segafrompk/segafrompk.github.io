@@ -243,7 +243,7 @@ span.onclick = function() {
     modal.style.display = "none";
     modalSadrzaj.classList.remove('modal-sadrzaj-izlaz');
     modal.classList.remove('modal-izlaz');
-  }, 400);
+  }, 350);
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -255,7 +255,7 @@ window.onclick = function(event) {
       modal.style.display = "none";
       modalSadrzaj.classList.remove('modal-sadrzaj-izlaz');
       modal.classList.remove('modal-izlaz');
-    }, 400);
+    }, 350);
   }
 }
 

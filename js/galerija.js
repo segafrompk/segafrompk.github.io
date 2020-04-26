@@ -35,6 +35,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/1/1/7.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Radovi na priljučenju vodovodne i kanalizacione mreže na uličnu mrežu trenutno jednog od najvećih projekata u Nišu. Posao ostvaren kroz saradnju sa preduzećem Vodogradnja d.o.o. iz Niša.",
             "adresaSlike": "images/galerija/1/1/1.jpg",
         },
         "Kanalizacioni i vodomerni šahtovi u okviru kompleksa Novi Niš": {
@@ -48,6 +49,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/1/2/2.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Građevinski radovi na vodovodnoj i kanalizacionoj mreži trenutno najluksuznijeg objekta u okviru kompleksa \"Novi Niš\".",
             "adresaSlike": "images/galerija/1/2/1.jpg"
         },
         "adresaSlike": "images/galerija/1/1/1.jpg"
@@ -64,6 +66,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/1/2.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Izvođenje i projetovanje obalnih stubova mosta u selu Kupinovo, u neposrednoj blizini parka prirode \"Đavolja Varoš\". Po okončanju stubova, montirana je čelična mostovska konstrukcija koja do dan danas služi meštamina sela.",
             "adresaSlike": "images/galerija/2/1/1.jpg"
         },
         "Most u Prolom Banji": {
@@ -112,6 +115,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/2/10.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Betonska mostovska konstrukkcija, ostvarena u saradnji sa preduzećem Orion Telekom, koje poseduje parcele sa obe strane reke. U perspektivi, preduzeće planira izgradnju odmarališnog kompleksa na ovim parcelama i most će služiti kao veza između dva dela kompleksa.",
             "adresaSlike": "images/galerija/2/2/1.jpg"
         },
         "Projekti rekonstrukcija mostova": {
@@ -155,6 +159,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/3/9.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Preduzeće je uradilo niz projekata sanacije betonskih i spregnutih mostova na teritoriji Topličkog okruga.",
             "adresaSlike": "images/galerija/2/3/1.jpg"
         },
         "Rekonstrukcija ulice Svete Anu u Kuršumliji": {
@@ -172,6 +177,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/4/3.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Ulica Svete Ane je gravna ulica u Kuršumliji. Ovom rekonstrukcijom, ulica je dobila potpuno nov i svež izgled. Projekat izveden kroz saradnju sa preduzećem Trenskop d.o.o. iz Paraćina kao ozbilnim dobavljačem i poslovnim partnerom. Posle ovog projekta, karijera se nastavila i traje i danas.",
             "adresaSlike": "images/galerija/2/4/1.jpg"
         },
         "Spoljno uređenje u okviru kompleksa Novi Niš": {
@@ -201,6 +207,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/5/6.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Parterno uređenje oko objekta u okviru kompleksa Novi Niš. opločanje je izvedeno starom kaldrmom, sto je moderno projektoanom objektu dalo, jako interesantan izgled. Projekat izveden u saradnji sa firmom Trio-gradnja iz Beograda.",
             "adresaSlike": "images/galerija/2/5/1.jpg"
         },
         "Teren za tenis u Lukovskoj Banji": {
@@ -223,6 +230,7 @@ const galerijaPodaci = {
                 "portrait": true,
                 "opisSlike": ""
             },
+            "opisAlbuma": "Izgradnjom teniskog terena Lukovska Banja i Planinka d.o.o. su znatno unapredili svoju ponudu, pošto postaju savršeno mesto za pripremu sportista a ne samo kao lečilište.",
             "adresaSlike": "images/galerija/2/6/1.jpg"
         },
         "Uređenje dvorišta Prokuplje": {
@@ -243,6 +251,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/2/7/4.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Uvek smo tu za ljude koji hoće da od dvorišta naprave \"svoj kutak\". Ispunjavamo zahteve investitora kroz saradnju sa renomiranim dobavljačima.",
             "adresaSlike": "images/galerija/2/7/1.jpg"
         },
         "adresaSlike": "images/galerija/2/5/4.jpg"
@@ -267,6 +276,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/1/4.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Modeling d.o.o. Prokuplje je prihvatio poziv crkvene zajednice sela Merdare i uključio se u izgradnju crkve. Radovi su uspešno završeni na obostrano zadovoljstvo.",
             "adresaSlike": "images/galerija/3/1/1.jpg"
         },
         "Dogradnja doma za smeštaj starih lica Blace": {
@@ -296,6 +306,7 @@ const galerijaPodaci = {
                 "portrait": true,
                 "opisSlike": ""
             },
+            "opisAlbuma": "U kasnu jesen 2019. godine otpočelo se sa radovima na i fazi dogradnje objekta za smeštaj starih lica u Blacu. Nakon završetka ovih radova čeka se nastavak dogradnje za koju će preduzeće konkurisati.",
             "adresaSlike": "images/galerija/3/2/1.jpg"
         },
         "Hala za smeštaj i remont opreme Prokuplje": {
@@ -320,6 +331,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/3/5.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Svako preduzeće sa sopstvenom mehanizacijom zahteva prostor za održavanje iste. Ovaj posao je rezultat uspešne saradnje prokupačkih preduzeća.",
             "adresaSlike": "images/galerija/3/3/3.jpg"
         },
         "Projektovanje konstrukcije hale Prolom Vode u Prolom Banji": {
@@ -336,6 +348,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/4/3.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Projekat čelične konstrukcije hale za smeštaj gotovog proizvoda. Projekat izveden u saradnji sa  kolegama usko specijalizovanim za svoje oblasti. Projekat je izveden i u veliko je u fazi eksploatacije.",
             "adresaSlike": "images/galerija/3/4/1.jpg"
         },
         "Rekonstrukcija krova tehničke škole u Prokuplju": {
@@ -344,6 +357,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/5/1.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Rekonstrukcijom krova je rešen višedecenijski problem manjeg i večeg prokišnjavanja zgrade srednje tehničke škole \"15. Maj\" u Prokuplju. Rekonstruisana je krovna konstrukcija, zamenjena krovna obloga, dok je stara azbestra krovna obloga spakovana i propisno odložena.",
             "adresaSlike": "images/galerija/3/5/1.jpg"
         },
         "Rekonstrukcija krova zgrade opštine Prokuplje": {
@@ -379,6 +393,7 @@ const galerijaPodaci = {
                 "portrait": true,
                 "opisSlike": ""
             },
+            "opisAlbuma": "Zgrada opštine prokuplje predstavlja značajno istorijsko nasleđe topličkog okvuga. Kao takva predstavljala je pravi izazov. Rekonstrukcija kvova je uspešno okončana leta 2019. godine.",
             "adresaSlike": "images/galerija/3/6/1.jpg"
         },
         "Rekonstrukcija osnovne škole Miloje Zakić Kuršumlija": {
@@ -403,6 +418,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/7/5.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Zgrada osnovne škole je rađena pre dostavremena. Radovi su obuhvatali energetsku sanaciju objekta. Urađena je nova fasada, postavljena nova stolarija, rekonstruisan krov. Škola je već u prvoj godini eksploatacije posle radova ostvarila ozbiljne uštede i troškovima za grejanje.",
             "adresaSlike": "images/galerija/3/7/1.jpg"
         },
         "Stambena zgrada Prokuplje": {
@@ -450,6 +466,7 @@ const galerijaPodaci = {
                 "portrait": true,
                 "opisSlike": ""
             },
+            "opisAlbuma": "Stambena zgrada je smeštena na raskrsnici vrlo prometnih ulica u samom centru Prokuplja. Završetkom objekta Prokuplje će dobiti modernu stambeno - poslovnu zgradu. Koja će biti prepoznatljiva na panorami grada.",
             "adresaSlike": "images/galerija/3/8/4.jpg"
         },
         "Stambeni i poslovni objekti Prokuplje": {
@@ -468,6 +485,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/3/9/3.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Kroz poslovanje smo se trudili da ulepšamo ulice gradova Topličkog okruga. Naša priča se nastavlja.",
             "adresaSlike": "images/galerija/3/9/1.jpg"
         },
         "adresaSlike": "images/galerija/3/1/1.jpg"
@@ -492,6 +510,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/4/1/4.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Konstrukcije kamionskih vaga se realizuju u saradnji sa servisom vaga \"Preciz LIA\" iz Niša. Tehnička rešenja primenjena na ovim vagama su plod saradnje naša dva preduzeća.",
             "adresaSlike": "images/galerija/4/1/2.jpg"
         },
         "Projekat temelja za kolni mlin Ciglana Mala Plana": {
@@ -500,6 +519,7 @@ const galerijaPodaci = {
                 "adresaSlike": "images/galerija/4/2/1.jpg",
                 "opisSlike": ""
             },
+            "opisAlbuma": "Projekat temelja kolnog mlina predstavlaj specifičnu konstrukciju zbog velikih vibracija i udarnih opterećenje mlina. Projekat je uspešno izveden i temelj kao takav je u stanju eksploatacije.",
             "adresaSlike": "images/galerija/4/2/1.jpg"
         },
         "adresaSlike": "images/galerija/4/1/2.jpg"
@@ -513,6 +533,7 @@ let trenutniIme = 'galerija';
 function nadjiParentObjekat (nodeName) {
     if (Object.prototype.hasOwnProperty.call(galerijaPodaci, nodeName)) {
         trenutniIme = 'galerija'
+        document.querySelector('.stickyContainer').style.display = 'none';
         return galerijaPodaci;
     } else {
         var galerijaNavigacija = Object.entries(galerijaPodaci);
@@ -549,12 +570,19 @@ function napraviGaleriju (trenutniPregled) {
         let baguetteRemove = document.getElementById('baguetteBox-overlay')
         baguetteRemove.parentNode.removeChild(baguetteRemove);
     }
+    if (galerija.querySelector('.opis-albuma-slika') != null) {
+        galerija.removeChild(galerija.querySelector('.opis-albuma-slika'));
+    }
+
+    if (trenutniIme !== 'galerija') {
+        document.querySelector('.stickyContainer').style.display = 'block';
+    }
     var galerijaRed = document.createElement('div');
     galerijaRed.className = 'red';
     var trenutniPregledLista = Object.entries(trenutniPregled)
     if (trenutniPregled.sadrziSlike === true) {
-        for (var i = 1; i < trenutniPregledLista.length-1; i++) {
-            galerijaRed.appendChild(elementGalerije(trenutniPregledLista[i], i, trenutniPregledLista.length-2, true));
+        for (var i = 1; i < trenutniPregledLista.length-2; i++) {
+            galerijaRed.appendChild(elementGalerije(trenutniPregledLista[i], i, trenutniPregledLista.length-3, true));
         }
     } else {
         for (var j = 1; j < trenutniPregledLista.length-1; j++) {
@@ -566,6 +594,13 @@ function napraviGaleriju (trenutniPregled) {
     } else {
         galerijaRed.classList.add('red1');
     }
+    
+    if (trenutniPregled.opisAlbuma) {
+        var albumOpis = document.createElement('div');
+        albumOpis.innerHTML = trenutniPregled.opisAlbuma;
+        albumOpis.className = 'opis-albuma-slika';
+        galerija.appendChild(albumOpis);
+    }
 
     galerija.appendChild(galerijaRed);
     poravnajTekst();
@@ -575,24 +610,8 @@ function napraviGaleriju (trenutniPregled) {
         "noScrollbars": "false",
         "animation": "slideIn"
     });
-    // if (trenutniPregled.sadrziSlike === true) {
-    //     setTimeout(() => { 
-    //         portraitOrLandscape()
-    //     }, 1000);
-    // }
 }
 
-// function portraitOrLandscape() {
-//     var slike = document.querySelectorAll('.slika')
-//     for(let x = 0; x < slike.length; x++) {
-//         var slikaZaSelektovanje = slike[x].querySelector('.element')
-//         if (slikaZaSelektovanje.naturalHeight > slikaZaSelektovanje.naturalWidth) {
-//             slike[x].classList.add('portrait');
-//         } else {
-//             slike[x].classList.add('landscape');
-//         }
-//     }
-// }
 
 function elementGalerije (podaci, i, brojElemenata, slika) {
     var element = document.createElement('div');

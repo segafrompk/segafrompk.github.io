@@ -2,6 +2,25 @@
     
 }
 
+@keyframes galerijaUlaz {
+    from {
+        height: 80%;
+        opacity: 0;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.opis-albuma-slika {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+    animation-name: galerijaUlaz;
+    animation-duration: 1s;
+}
+
 button:focus{ 
     outline: 0;
 }
@@ -21,6 +40,11 @@ button:focus{
 
 .red2{
     grid-template-columns: repeat(2, 1fr);
+}
+
+.slika {
+    animation-name: galerijaUlaz;
+    animation-duration: 0.4s;
 }
 
 .portrait {
@@ -60,6 +84,8 @@ button:focus{
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
     border-radius: 4px;
     cursor: pointer;
+    animation-name: galerijaUlaz;
+    animation-duration: 0.4s;
 }
   
 .folder * {
@@ -107,6 +133,7 @@ button:focus{
 }
 
 .stickyContainer {
+    display: none;
     position: relative;
     float: left;
     top: 40px;

@@ -17,6 +17,8 @@
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 20px;
+    -webkit-animation-name: galerijaUlaz;
+    -webkit-animation-duration: 1s;
     animation-name: galerijaUlaz;
     animation-duration: 1s;
 }

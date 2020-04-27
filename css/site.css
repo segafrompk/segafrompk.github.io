@@ -325,6 +325,7 @@ button {
   -webkit-animation-duration: 0.4s;
   animation-name: modalOpacityOn;
   animation-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .modal-izlaz {
@@ -471,4 +472,52 @@ input {
   padding: 15px;
   line-height: 1.2rem;
   font-size: 1.2rem;
+}
+
+#cvstatus {
+  display: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  -webkit-animation-name: galerijaUlaz;
+  -webkit-animation-duration: 1s;
+  animation-name: galerijaUlaz;
+  animation-duration: 1s;
+}
+
+#cvstatus ul {
+  margin-bottom: 0px;
+}
+
+.show-cv-status {
+  display: block !important;
+}
+
+.cvstatus-error {
+  border: 2px solid red;
+  background-color: mistyrose;
+}
+
+.cvstatus-success {
+  border: 2px solid forestgreen;
+  background-color: rgb(220, 255, 220);
+}
+
+.fomularIzlaz {
+  -webkit-animation-name: formularIzlaz;
+  -webkit-animation-duration: 0.4s;
+  animation-name: formularIzlaz;
+  animation-duration: 0.4s;
+}
+
+@keyframes formularIzlaz {
+  from {
+      height: 100%;
+      opacity: 1;
+  }
+  to {
+      height: 0%;
+      opacity: 0;
+  }
 }

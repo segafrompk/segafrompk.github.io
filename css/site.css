@@ -930,7 +930,7 @@ input {
 
   @media (max-width: 400px)  {
     html {
-      font-size: 10px;
+      font-size: 11px;
     }
 
     header {
@@ -975,7 +975,7 @@ input {
 
     .mapa {
       margin: 20px;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 250px);
       width: 80%;
     }
 
@@ -998,9 +998,11 @@ input {
     .modeling {
       margin-top: 10px;
       margin-bottom: 0px;
+      flex-direction: column;
     }
 
     .typewrittertext {
+      font-size: 3.5rem;
       line-height: 1;
     }
 
@@ -1051,9 +1053,9 @@ input {
     }
 
     .about {
-      margin-left: 20px;
+      margin-left: 40px;
       width: 50%;
-      margin-top: 0px;
+      margin-top: 20px;
       padding: 5px;
       font-size: 0.9rem;
     }
@@ -1142,7 +1144,7 @@ input {
 
     .mapa {
       margin: 20px;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 250px);
       width: 80%;
     }
 

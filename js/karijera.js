@@ -161,7 +161,7 @@ form.onsubmit = function(event) {
     var xhr = new XMLHttpRequest();
 
     // Open the connection.
-    xhr.open('POST', 'karijera.php', true);
+    xhr.open('POST', 'php/karijera.php', true);
 
 
     // Set up a handler for when the task for the request is complete.

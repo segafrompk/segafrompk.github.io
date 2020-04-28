@@ -121,10 +121,6 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .container {
-    padding: 0 1rem;
-  }
-
   .typewrittertext {
     font-size: 3rem;
     line-height: 4.8;
@@ -135,9 +131,6 @@ h2 {
   .typewrittertext {
     font-size: 2.5rem;
     line-height: 5.8;
-  }
-  h2 {
-    font-size: 1.5rem;
   }
 }
 

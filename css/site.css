@@ -39,6 +39,7 @@ header {
 
 .logonavbar {
   position: absolute;
+  z-index: 2;
   border-radius: 50%;
   background-color: #fff;
   top: 5px;
@@ -557,6 +558,8 @@ input {
     .navigacija {
       height: 40px;
       padding: 0.5rem 0;
+      width: 55%;
+      margin-right: 30px;
     }
 
     .page {
@@ -572,11 +575,6 @@ input {
       margin: 20px;
       height: calc(100vh - 100px);
       width: 80%;
-    }
-
-    .navigacija {
-      width: 55%;
-      margin-right: 30px;
     }
 
     .logonavbar {
@@ -693,6 +691,8 @@ input {
     .navigacija {
       height: 40px;
       padding: 0.5rem 0;
+      width: 55%;
+      margin-right: 30px;
     }
 
     .page {
@@ -708,11 +708,6 @@ input {
       margin: 20px;
       height: calc(100vh - 100px);
       width: 600px;
-    }
-
-    .navigacija {
-      width: 55%;
-      margin-right: 30px;
     }
 
     .logonavbar {
@@ -909,7 +904,7 @@ input {
     }
 
     .mapa {
-      width: 700px;
+      width: 1000px;
     }
 
     .bubble {
@@ -928,5 +923,343 @@ input {
       width: 50%;
     }
 
+  }
+}
+
+@media (orientation: portrait) {
+
+  @media (max-width: 400px)  {
+    html {
+      font-size: 10px;
+    }
+
+    header {
+      position: fixed;
+      bottom: 0px;
+      top: unset;
+      overflow: hidden;
+    }
+
+    .sitewindow {
+      top: 0px;
+      height: calc(100vh - 40px);
+    }
+
+    .navigacija {
+      height: 40px;
+      padding: 0.5rem 10px;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+    .hero {
+      background-position-x: center;
+    }
+
+    .page1img, .page2img, .page3img {
+      flex: unset;
+    }
+
+    .slideUsluge {
+      flex-direction: column;
+    }
+
+    .page {
+      height: calc(100vh - 40px);
+    }
+
+    .kontaktcontainer {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .mapa {
+      margin: 20px;
+      height: calc(100vh - 100px);
+      width: 80%;
+    }
+
+    .logonavbar {
+      display: none;
+      height: 250px;
+      width: 250px;
+    }
+
+    .logonavbar img {
+      bottom: 37px;
+      right: 38px;
+      height: 60px;
+    }
+
+    .bubble {
+      transform: scaleX(1.2) scaleY(4);
+    }
+
+    .modeling {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    .typewrittertext {
+      line-height: 1;
+    }
+
+    .typewritter {
+      padding: 3rem 3rem 0 1rem;
+    }
+
+    .logo {
+      min-width: 130px;
+    }
+
+    .tekstPrekoSlike {
+      font-size: 1.2rem;
+    }
+  
+    .pagetext {
+      padding: 20px;
+      width: 350px;
+      line-height: 1.3;
+      font-size: 0.95rem;
+    }
+
+    #karijera {
+      display: flex;
+      background-position-x: left;
+    }
+
+    .gallery {
+      padding: 20px;
+    }
+
+    .red1, .red2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .karijeraTekst {
+      width: 100%;
+      height: unset;
+      margin-top: auto;
+      font-size: 1.1rem;
+      padding: 30px 30px 0 30px;
+    }
+
+    .modalButton {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      margin-left: 20px;
+      width: 50%;
+      margin-top: 0px;
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .stickyContainer {
+      left: 5px;
+    }
+
+    .dugmeNazad {
+      top: 120px;
+      height: 25px;
+    }
+
+    .opis-albuma-slika {
+      font-size: 1.4rem;
+    }
+
+    .kontaktpodaci {
+      font-size: 1.1rem;
+      line-height: 30px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .modal {
+      padding-top: 30px;
+    }
+
+    .modal-sadrzaj {
+      width: 90%;
+    }
+
+    .formular {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 401px) and (max-width: 800px) {
+    html {
+      font-size: 13px;
+    }
+
+    header {
+      position: fixed;
+      bottom: 0px;
+      top: unset;
+      overflow: hidden;
+    }
+
+    .sitewindow {
+      top: 0px;
+      height: calc(100vh - 40px);
+    }
+
+    .navigacija {
+      height: 40px;
+      padding: 0.5rem 10px;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+    .hero {
+      background-position-x: center;
+    }
+
+    .page1img, .page2img, .page3img {
+      flex: unset;
+    }
+
+    .slideUsluge {
+      flex-direction: column;
+    }
+
+    .page {
+      height: calc(100vh - 40px);
+    }
+
+    .kontaktcontainer {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .mapa {
+      margin: 20px;
+      height: calc(100vh - 100px);
+      width: 80%;
+    }
+
+    .logonavbar {
+      display: none;
+      height: 250px;
+      width: 250px;
+    }
+
+    .logonavbar img {
+      bottom: 37px;
+      right: 38px;
+      height: 60px;
+    }
+
+    .bubble {
+      transform: scaleX(1.2) scaleY(4);
+    }
+
+    .modeling {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    .typewrittertext {
+      line-height: 1;
+    }
+
+    .typewritter {
+      padding: 3rem 3rem 0 1rem;
+    }
+
+    .logo {
+      min-width: 130px;
+    }
+
+    .tekstPrekoSlike {
+      font-size: 1.2rem;
+    }
+  
+    .pagetext {
+      padding: 20px;
+      width: 100%;
+      height: unset;
+      line-height: 1.3;
+      font-size: 0.95rem;
+    }
+
+    #karijera {
+      display: flex;
+      background-position-x: left;
+    }
+
+    .gallery {
+      padding: 20px;
+    }
+
+    .red1, .red2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .karijeraTekst {
+      width: 100%;
+      height: unset;
+      margin-top: auto;
+      font-size: 1.1rem;
+      padding: 30px 30px 0 30px;
+    }
+
+    .modalButton {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      margin-left: 20px;
+      width: 50%;
+      margin-top: 0px;
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .stickyContainer {
+      left: 5px;
+    }
+
+    .dugmeNazad {
+      top: 120px;
+      height: 25px;
+    }
+
+    .opis-albuma-slika {
+      font-size: 1.4rem;
+    }
+
+    .kontaktpodaci {
+      font-size: 1.1rem;
+      line-height: 30px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .modal {
+      padding-top: 30px;
+    }
+
+    .modal-sadrzaj {
+      width: 90%;
+    }
+
+    .formular {
+      grid-template-columns: 1fr;
+    }
   }
 }

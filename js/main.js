@@ -168,6 +168,8 @@ let karijeraObserver = new IntersectionObserver(navCheck, karijeraOptions);
 
 karijeraObserver.observe(document.querySelector('#karijera'));
 
+const navPosition = document.querySelector('.navigacija').getBoundingClientRect();
+
 function navCheck(entries) {
   let viewportPercentage = entries[0].intersectionRect.height / entries[0].rootBounds.height
   /*console.log(entries[0].target.id + ": " + viewportPercentage);*/
@@ -193,7 +195,7 @@ function navCheck(entries) {
 function setMenuBubble (navItems, activeAnchor) {
   const itemSize = activeAnchor.getBoundingClientRect();
   bubble.style.setProperty('left', `${itemSize.left}px`);
-  bubble.style.setProperty('top', `${itemSize.top}px`);
+  bubble.style.setProperty('top', `${itemSize.top - navPosition.top}px`);
   bubble.style.setProperty('width', `${itemSize.width}px`);
   bubble.style.setProperty('height', `${itemSize.height}px`);
   navItems.forEach((item) => item.style.removeProperty('color'));

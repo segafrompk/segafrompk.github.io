@@ -1018,7 +1018,7 @@ input {
   
     .pagetext {
       padding: 20px;
-      width: 350px;
+      width: 100%;
       line-height: 1.3;
       font-size: 0.95rem;
     }

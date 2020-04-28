@@ -998,6 +998,8 @@ input {
     .modeling {
       margin-top: 10px;
       margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
       flex-direction: column;
     }
 
@@ -1053,11 +1055,12 @@ input {
     }
 
     .about {
-      margin-left: 40px;
+      margin-left: auto;
+      margin-right: auto;
       width: 50%;
       margin-top: 20px;
       padding: 5px;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .container {
